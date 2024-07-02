@@ -1,7 +1,9 @@
 <script setup>
-
 import PostCreationView from './PostCreationView.vue'
-const postId = new URLSearchParams(window.location.search).get('id')
+
+
+const params = new URLSearchParams(window.location.href.split('?')[1])
+const postId = params.get('id')
 
 </script>
 

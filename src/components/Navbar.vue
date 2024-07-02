@@ -5,12 +5,16 @@
     <div class="navbarContainer">
         <div class="navbar">
             <h2 class="title">ALPES - CRUD Posts Task</h2>
-        <nav>
-            <ul>
-                <li><a href="/"><i class="bi bi-house" style="margin-right: 8px; color: white;"></i>Home</a></li>
-                <li><a href="/createPost"><span><i class="bi bi-plus-square" style="color: white; margin-right: 8px;"></i></span>Create a new post</a></li>
-            </ul>
-        </nav>
+            <nav>
+    <ul>
+      <li>
+        <router-link to="/"><i class="bi bi-house" style="margin-right: 8px; color: white;"></i>Home</router-link>
+      </li>
+      <li>
+        <router-link to="/createPost"><span><i class="bi bi-plus-square" style="color: white; margin-right: 8px;"></i></span>Create a new post</router-link>
+      </li>
+    </ul>
+  </nav>
         </div>
     </div>
 </template>

@@ -40,7 +40,7 @@ function deletePost(){
             <div class="post-lowerPart">
                 <p class="postDescription">{{description}}</p>
                 <div class="postButtons">
-                    <a style="background-color: #008CBA; width: 80px;" class="buttons" :href="'/editPost?id=' + id"><i class="bi bi-pencil-fill" style="margin-right: 8px;"></i>Edit Post</a>
+                    <a style="background-color: #008CBA; width: 80px;" class="buttons" :href="'/ALPS/#/editPost?id=' + id"><i class="bi bi-pencil-fill" style="margin-right: 8px;"></i>Edit Post</a>
                     <button style="background-color: #f44336;" class="buttons" @click="deletePost"><i class="bi bi-trash-fill" style="margin-right: 8px;"></i>Delete Post</button>
                 </div>
             </div>

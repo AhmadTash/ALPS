@@ -23,6 +23,9 @@ if(props.id) {
     
 }
 
+const BASE_URL = '/ALPS';
+
+
 
 const { formattedTime, min, sec, postTimer, stopTimer, resetTimer} = useTimer(post.value.timeSpent.secSpent,post.value.timeSpent.minSpent);
 
@@ -56,7 +59,7 @@ function savePost() {
   if(props.id){
     updatePost()
     resetTimer()
-    window.location.href = "/"
+    window.location.href = `${BASE_URL}/`;
     return
   }else {
     post.value.id = generateId()
@@ -73,7 +76,7 @@ post.value.timeSpent.minSpent = 0
 post.value.timeSpent.secSpent = 0
 
 resetTimer()
-window.location.href = "/"
+window.location.href = `${BASE_URL}/`;
   }
   
 }

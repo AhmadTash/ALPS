@@ -1,7 +1,7 @@
 <script setup>
 import Post from '../Post.vue'
 
-
+const BASE_URL = '/ALPS';
 const posts = JSON.parse(sessionStorage.getItem('posts')) || []
 </script>
 
@@ -15,7 +15,7 @@ const posts = JSON.parse(sessionStorage.getItem('posts')) || []
         
             <div v-if="!posts.length" class="noPostsContainer">
                 <h1 style="margin-top: 0;">No Posts to show</h1>
-                <a href="/createPost" style="color: black;">Click here to add your first post !</a>
+                <a :href="`${BASE_URL}/#/createPost`" style="color: black;">Click here to add your first post !</a>
             </div>
         
         
